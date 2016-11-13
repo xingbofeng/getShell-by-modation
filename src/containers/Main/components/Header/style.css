@@ -1,0 +1,12 @@
+.header {
+  height: 80px;
+  background-image: url(images/header.png);
+  background-size: contain;
+}
+
+.header .title {
+  font-size: 40px;
+  color: silver;
+  margin-left: 20px;
+  line-height: 80px;
+}

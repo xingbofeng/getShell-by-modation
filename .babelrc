@@ -1,0 +1,12 @@
+{
+  "presets": [
+    "latest",
+    "react",
+    "stage-0"
+  ],
+  "plugins": [
+    "transform-runtime",
+    "babel-plugin-transform-decorators-legacy",
+    ["import", {"libraryName": "antd"}]
+  ]
+}
