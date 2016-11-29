@@ -14,6 +14,8 @@ const port = process.env.PORT || 8000;
 const server = new Hapi.Server();
 
 server.connection({ host, port });
+// 编写的socket插件，通过register添加上去
+
 server.register(
   [h2o2, inert, socket], (err) => {
     if (err) throw err;
@@ -37,4 +39,3 @@ export default {
   server,
   runServer,
 };
-

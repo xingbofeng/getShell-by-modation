@@ -1,7 +1,4 @@
 import * as at from 'constants/actionTypes';
-// import * as io from 'socket.io-client';
-
-// const socket = io.connect('http://localhost:8000');
 
 export function changeName(name) {
   return {
@@ -10,6 +7,7 @@ export function changeName(name) {
   };
 }
 
+// changeMessage触发时，改变store的message
 export function changeMessage(message) {
   return {
     type: at.CHANGE_MESSAGE,
@@ -17,6 +15,7 @@ export function changeMessage(message) {
   };
 }
 
+// changeResult触发时，改变store的result
 export function changeResult(result) {
   return {
     type: at.CHANGE_RESULT,

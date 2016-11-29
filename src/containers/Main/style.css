@@ -1,0 +1,13 @@
+.title {
+  font-size: 20px;
+  color: #aaa;
+}
+
+.content {
+  margin: 0 auto;
+  width: 500px;
+}
+
+.content input {
+  font-size: 20px;
+}

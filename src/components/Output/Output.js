@@ -1,4 +1,5 @@
 import React, { Component, PropTypes } from 'react';
+import style from './style.css';
 
 class output extends Component {
   static propTypes = {
@@ -14,7 +15,8 @@ class output extends Component {
   render() {
     return (
       <div>
-        <pre>{ this.props.result }</pre>
+        <span className={style.content}>Command Output:</span>
+        <pre className={style.output}>{ this.props.result }</pre>
       </div>
     );
   }

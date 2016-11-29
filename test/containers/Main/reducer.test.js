@@ -4,11 +4,25 @@ import * as at from 'constants/actionTypes';
 import immutable from 'immutable';
 
 describe('main reducer', () => {
-  it('should change name correctly', () => {
-    const result = main(immutable.fromJS({}), {
-      type: at.CHANGE_NAME,
-      name: 'bar',
+  it('test CHANGE_MESSAGE ok!', () => {
+    const mymessage = main(immutable.fromJS({}), {
+      type: at.CHANGE_MESSAGE,
+      message: '',
     });
-    expect(result.get('name')).to.be.equal('bar');
+    expect(mymessage.get('message')).to.be.equal('');
+  });
+  it('test CHANGE_RESULT ok!', () => {
+    const myresult = main(immutable.fromJS({}), {
+      type: at.CHANGE_RESULT,
+      result: '',
+    });
+    expect(myresult.get('result')).to.be.equal('');
+  });
+  it('test default ok!', () => {
+    const mydefault = main(immutable.fromJS({}), {
+      type: '',
+      result: '',
+    });
+    expect(mydefault.get('result')).to.be.equal(undefined);
   });
 });

@@ -4,7 +4,10 @@ export default {
 
   config: {
     handler(request, reply) {
-      return reply('hello world');
+      return reply({
+        hello: 'hello',
+        world: 'world',
+      });
     },
   },
 };
