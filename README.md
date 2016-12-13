@@ -10,12 +10,12 @@ npm start
 ```
 
 ## ToDoList
-- [ ] React & Redux
-- [ ] Ant Design
-- [x] 样式调整
-- [ ] websocket
-- [ ] Hapi
-- [x] 部署到服务器
+- [x] React & Redux
+- [x] Ant Design
+- [ ] 样式调整
+- [x] websocket
+- [x] Hapi
+- [ ] 部署到服务器
 
 ## Star
 如果你喜欢本项目，那么求一个:star:
